@@ -1,6 +1,6 @@
 <!-- ## [Live Demo](https://weight-calculator-react.vercel.app) -->
 <!-- ## <a href="https://weight-calculator-react.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a> -->
-## [Live Demo](https://weight-calculator-react.vercel.app){:target="_blank"}
+[Live Demo](https://weight-calculator-react.vercel.app){:target="_blank"}
 
 
 
