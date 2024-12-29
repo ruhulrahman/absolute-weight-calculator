@@ -1,4 +1,6 @@
-## [Live Demo](https://weight-calculator-react.vercel.app)
+<!-- ## [Live Demo](https://weight-calculator-react.vercel.app) -->
+## <a href="https://weight-calculator-react.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+
 
 
 # React + TypeScript + Vite
