@@ -1,6 +1,6 @@
 // import './App.css'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import starImage from "./assets/star.png";
 
 function App() {
@@ -12,13 +12,30 @@ function App() {
     setWeight(0)
     if (height) {
 
-      const feetToCm = parseFloat(height.split('.')[0]) * 30.48
-      const inchesToCm = parseFloat(height.split('.')[1]) * 2.54
-      const heightInCm = feetToCm + inchesToCm
+      console.log('height.split', height.split('.'))
+      const length = height.split('.').length
+      console.log('length', length)
+      let heightInCm = 0
+      if (length == 1) {
+        heightInCm = parseInt(height.split('.')[0]) * 30.48
+      } else if (length == 2) {
+        const feetToCm = parseFloat(height.split('.')[0]) * 30.48
+        const inchesToCm = parseFloat(height.split('.')[1]) * 2.54
+        heightInCm = feetToCm + inchesToCm
+      }
 
       setWeight(parseInt((heightInCm - 100).toString()))
+    } else {
+      alert('Please enter your height in feet.')
+      return;
     }
   }
+
+  useEffect(() => {
+    if (!height) {
+      setWeight(0)
+    }
+  }, [height])
 
   return (
     <>
