@@ -26,7 +26,7 @@ function App() {
         <h1 className='text-green-400 text-[32px]'>Absolute Weight Calculator</h1>
         {/* <p className='text-red-400'>Do you want to know your absolute weight?</p> */}
         <div className="flex items-center justify-center mb-3">
-          <input type="number" step={0.01} name="height" value={height} onChange={(e) => setHeight(e.target.value)} id="" className='border border-gray-400 px-[10px] py-[5px] rounded-lg' placeholder='Enter your weight in feet' />
+          <input type="number" step={0.01} name="height" value={height} onChange={(e) => setHeight(e.target.value)} id="" className='' placeholder='Enter your weight in feet' />
           <span className='pl-2'>Feet</span>
           <img src={starImage} alt="" className="w-[50px] animate-spin-slower ml-2" />
         </div>
